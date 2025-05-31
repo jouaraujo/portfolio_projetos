@@ -1,184 +1,237 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfólio de Ciência de Dados</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ciência de Dados - Jonatan Araujo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 text-center;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+        }
+        .tag {
+            @apply bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Jonatan Araujo</a>
+            <div class="space-x-4">
+                <a href="#sobre" class="text-gray-600 hover:text-blue-600 transition duration-300">Sobre</a>
+                <a href="#habilidades" class="text-gray-600 hover:text-blue-600 transition duration-300">Habilidades</a>
+                <a href="#experiencia" class="text-gray-600 hover:text-blue-600 transition duration-300">Experiência</a>
+                <a href="#projetos" class="text-gray-600 hover:text-blue-600 transition duration-300">Projetos</a>
+                <a href="#contato" class="text-gray-600 hover:text-blue-600 transition duration-300">Contato</a>
+            </div>
+        </div>
+    </nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+    <header id="banner" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 md:text-left mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Olá! Sou Jonatan Araujo</h1>
+                    <p class="text-xl md:text-2xl mb-6 text-indigo-100">Bem-vindo ao meu Portfólio de Projetos de Ciência de Dados.</p>
+                    <p class="text-lg mb-8 text-indigo-200">
+                        Aqui demonstro minhas habilidades em resolver problemas de negócio utilizando conceitos e ferramentas da Ciência de Dados, através de projetos com dados públicos.
+                    </p>
+                    <a href="#projetos" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 text-lg">
+                        Ver Projetos
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="images/jou1.jpg" alt="Jonatan Araujo" class="rounded-full shadow-2xl w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white"
+                         onerror="this.onerror=null;this.src='https://placehold.co/320x320/E0E7FF/4F46E5?text=Jonatan+A.';">
+                </div>
+            </div>
+        </div>
+    </header>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Portfólio de Projetos</strong> de Ciência de Dados</a>
-								</header>
+    <section id="sobre" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-xl max-w-3xl mx-auto">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Meu nome é Jonatan Wiliam Santos de Araujo</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    Graduando em Estatística pela Universidade Federal de Santa Maria, com
+                    atuação em projetos de iniciação científica.
+                </p>
+                <p class="text-lg leading-relaxed mb-4">
+                    Tenho experiência em projetos de análise de dados, modelagem estatística,
+                    regressão e séries temporais com R. Tenho familiaridade com bibliotecas
+                    amplamente utilizadas na ciência de dados (Pandas, Scikit-Learn, Plotly,
+                    matplotlib, Streamlit), além de dominar conceitos fundamentais da
+                    Estatística, como inferência estatística, probabilidade e modelos de
+                    regressão.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Também tenho conhecimentos em Python, Git (Versionamento
+                    de código) e SQL.
+                </p>
+            </div>
+        </div>
+    </section>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Olá, seja muito bem-vindo (a) ao meu portfólio de<br />
-												projetos de Ciência de Dados.</h1>	
-										</header>
-										<p>Nessa página, eu demonstro minhas habilidades de resolver problemas de negócio utilizando conceitos e ferramentas da Ciência de Dados, através de projetos com dados públicos.<br />
-										Você vai encontrar também, minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo Ciência de Dados.<br />Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
-										
-									</div>
-									<span class="image object">
-										<img src="images/jou1.jpg" alt="" style="width: 380px; height: auto;" />
-									</span>
-								</section>
+    <section id="habilidades" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-code mr-2 text-blue-500"></i>Linguagens e Ferramentas</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="tag mr-2">Python</span> com foco em análise de dados</li>
+                        <li class="flex items-center"><span class="tag mr-2">R</span> para modelagem estatística</li>
+                        <li class="flex items-center"><span class="tag mr-2">SQL</span> para consulta de bancos de dados</li>
+                        <li class="flex items-center"><span class="tag mr-2">Git & GitHub</span> para versionamento</li>
+                        <li class="flex items-center"><span class="tag mr-2">Streamlit</span> para dashboards</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-brain mr-2 text-blue-500"></i>Estatística e Machine Learning</h3>
+                    <ul class="space-y-2">
+                        <li>Estatística descritiva e inferencial</li>
+                        <li>Modelos de Regressão</li>
+                        <li>Séries Temporais</li>
+                        <li>Algoritmos de Machine Learning (Scikit-Learn)</li>
+                        <li>Testes de hipóteses</li>
+                    </ul>
+                </div>
+                <div class="card p-6 md:col-span-2"> <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-chart-bar mr-2 text-blue-500"></i>Visualização de Dados</h3>
+                     <ul class="space-y-2">
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Plotly</li>
+                        <li>Criação de dashboards interativos</li>
+                     </ul>
+                </div>
+            </div>
+             <p class="text-center mt-8 text-lg">Outras habilidades incluem: Pensamento Estratégico e Conceitos de ETL.</p>
+        </div>
+    </section>
 
-								<!-- Sobre mim -->
-								<section>
-									<header class="main">
-										<h1>Sobre mim</h1>
-									</header>
+    <section id="experiencia" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Experiências Profissionais</h2>
+            <div class="space-y-12 max-w-3xl mx-auto">
+                <div class="card p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Bolsista IC FAPERGS</h3>
+                    <p class="text-sm text-gray-500 mb-3">Set. 2023 - Ago. 2024</p>
+                    <ul class="list-disc list-inside space-y-2 text-lg leading-relaxed">
+                        <li>Desenvolvi e analisei a distribuição UEMWD (Weibull Modificada Exponencial Unitária), utilizando geradores de distribuições baseados na função de sobrevivência Weibull modificada.</li>
+                        <li>Implementei métodos de estimação dos parâmetros por Máxima Verossimilhança (MLE) e Maximum Product of Spacings (MPS).</li>
+                        <li>Realizei simulações de Monte Carlo em diferentes cenários e tamanhos amostrais usando R para avaliar o desempenho dos estimadores, analisando viés, desvio padrão, EQM, assimetria e curtose.</li>
+                    </ul>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Bolsista IC FIPE</h3>
+                    <p class="text-sm text-gray-500 mb-3">Mai. 2025 - Presente</p> <ul class="list-disc list-inside space-y-2 text-lg leading-relaxed">
+                        <li>Desenvolvimento de um Aplicativo Web para a Análise dos Dados do Sistema de Informação sobre Nascidos Vivos (SINASC).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-									<!-- Content -->
-										<h2 id="content">Meu nome é Jonatan Wiliam Santos de Araujo</h2>
-										<p>Graduando em Estatística pela Universidade Federal de Santa Maria, com
-										   atuação em projetos de iniciação científica.
-										   Tenho experiência em projetos de análise de dados, modelagem estatística,
-										   regressão e séries temporais com R. Tenho familiaridade com bibliotecas
-										   amplamente utilizadas na ciência de dados (Pandas, Scikit-Learn, Plotly,
-										   matplotlib, Streamlit), além de dominar conceitos fundamentais da
-										   Estatística, como inferência estatística, probabilidade e modelos de
-										   regressão. Também tenho conhecimentos em Python, Git (Versionamento
-										   de código) e SQL.
-										</p>
-									</section>
+    <section id="projetos" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Projetos em Ciência de Dados</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-1 gap-10 max-w-3xl mx-auto"> <article class="card">
+                    <img src="images/data-analytics-role.jpg" alt="Painel Gerencial Fome Zero" class="w-full h-64 object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Projeto+Fome+Zero';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Desenvolvimento de um Painel Gerencial para Negócio com o Streamlit</h3>
+                        <p class="mb-4 leading-relaxed">
+                            Nesse projeto, os conceitos de Programação em Python, manipulação de dados, pensamento estratégico e lógica de negócio, junto com ferramentas de desenvolvimento web como o Streamlit e Github, foram usados para desenvolver um painel gerencial com as principais métricas de uma empresa marketplace de delivery de comida.
+                        </p>
+                        <p class="mb-4 leading-relaxed">
+                            O resultado final do projeto foi um painel hospedado em um ambiente Cloud e disponibilizado através de um link web.
+                        </p>
+                        <h4 class="font-semibold text-gray-700 mb-2">Ferramentas utilizadas:</h4>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="tag">Python</span>
+                            <span class="tag">Visual Studio Code</span>
+                            <span class="tag">Terminal</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Streamlit Cloud</span>
+                            <span class="tag">Github</span>
+                        </div>
+                        <a href="https://github.com/jouaraujo/Dashboard-Fome-Zero" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-github mr-2"></i>Saiba Mais no GitHub
+                        </a>
+                    </div>
+                </article>
+                </div>
+        </div>
+    </section>
 
-							<!-- Section -->
-								<section>
- 	 								<header class="main">
-    										<h1>Habilidades</h1>
-  									</header>
+    <section id="contato" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="text-xl mb-8 leading-relaxed">
+                Sinta-se à vontade para entrar em contato para discutir projetos, oportunidades ou simplesmente trocar ideias sobre Ciência de Dados!
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:jonatansaraujo1999@gmail.com" class="text-blue-600 hover:text-blue-800 transition duration-300 text-lg flex items-center p-3 bg-white rounded-lg shadow-md hover:shadow-xl">
+                    <i class="fas fa-envelope fa-fw mr-2 text-2xl"></i> jonatansaraujo1999@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/jonatan-araujo/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300 text-lg flex items-center p-3 bg-white rounded-lg shadow-md hover:shadow-xl">
+                    <i class="fab fa-linkedin fa-fw mr-2 text-2xl"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
-  									<div class="row">
-									    <div class="col-6 col-12-medium">
-									      <h2>Linguagens de Programação</h2>
-									      <ul>
-									        <li>Python com foco em análise de dados</li>
-									        <li>Pensamento Estratégico</li>
-									        <li>Conceitos de ETL</li>
-									        <li>SQL Language</li>
-									      </ul>
-									
-									      <h2>Estatística e Machine Learning</h2>
-									      <ul>
-									        <li>Estatística descritiva (localização, dispersão, assimetria, kurtosis, densidade).</li>
-									        <li>Algoritmos de Regressão.</li>
-									        <li>Pacotes de Machine Learning: Sklearn e Scipy.</li>
-									      </ul>
-									    </div>
-									
-									    <div class="col-6 col-12-medium">
-									      <h2>Visualização de Dados</h2>
-									      <ul>
-									        <li>Matplotlib, Seaborn, Plotly.</li>
-									        <li>Streamlit.</li>
-									      </ul>
-									
-									      <h2>Engenharia de Software</h2>
-									      <ul>
-									        <li>Git e Github</li>
-									        <li>Streamlit cloud</li>
-									      </ul>
-									    </div>
-									  </div>
-									</section>
+    <footer class="bg-gray-800 text-gray-300 py-10 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> Jonatan Araujo. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Design modernizado com Tailwind CSS.</p>
+        </div>
+    </footer>
 
-								<!-- Experiência -->
-								<section>
-									<header class="main">
-										<h1>Experiências Profissionais</h1>
-									</header>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
 
-									
-										<h2 id="content">Bolsista IC FAPERGS(Set. 2023 - Ago. 2024)</h2>
-										<ul>
-										  <li>Desenvolvi e analisei a distribuição UEMWD (Weibull Modificada Exponencial Unitária), utilizando
-										      geradores de distribuições baseados na função de sobrevivência Weibull modificada.
-										  </li>
-										  <li>Implementei métodos de estimação dos parâmetros por Máxima Verossimilhança (MLE) e Maximum
-										      Product of Spacings (MPS).
-										  </li>
-										  <li>Realizei simulações de Monte Carlo em diferentes cenários e tamanhos amostrais usando R para
-										      avaliar o desempenho dos estimadores, analisando viés, desvio padrão, EQM, assimetria e curtose.
-										  </li>
-										</ul>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
-										<h2 id="content">Bolsista IC  FIPE(Mai. 2025 -)</h2>
-										<ul>
-										  <li>Desenvolvimento de um Aplicativo Web para a Análise dos Dados do Sistema de Informação sobre Nascidos Vivos (SINASC)</li>
-
-										</ul>
-									</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h1>Projetos em Ciência de Dados</h1>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="https://github.com/jouaraujo/Dashboard-Fome-Zero" class="image"><img src="images/data-analytics-role.jpg" alt="" /></a>
-											<h3>Desenvolvimento de um Painel Gerencial para Negócio com o Streamlit</h3>
-											<p>Nesse projeto, os conceitos de Programação em Python, manipulação de dados, pensamento estratégico e lógica de negócio, junto com ferramentas de desenvolvimetno web como o Streamlit e Github, foram usados para desenvolver um painel gerencial com as principais métricas de uma empresa marketplace de delivery de comida.</p>
-											<p>O resultado final do projeto foi um painel hospedado em um ambiente Cloud e disponibilizado através de um link web. O painel pode ser acessado por qualquer dispositivo conectado na internet.</p>
-											<h4>As ferramentas utilizadas foram:</h4>
-											<ul>
-												<li>Python.</li>
-												<li>Visual Studio Code.</li>
-												<li>Terminal.</li>
-												<li>Streamlit.</li>
-												<li>Streamlit Cloud.</li>
-												<li>Github.</li>
-											</ul>
-											
-											<ul class="actions">
-												<li><a href="https://github.com/jouaraujo/Dashboard-Fome-Zero" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-
-								<!-- Contato -->
-								<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Entre em contato</h2>
-									</header>
-									<p>Sinta-se a vontade para entrar em contato.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">jonatansaraujo1999@gmail.com</a></li>
-										<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jonatan-araujo/">LinkedIn</a></li>
-									</ul>
-								</section>
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
